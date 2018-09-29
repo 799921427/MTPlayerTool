@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ud-To-YR2">
+                                <rect key="frame" x="50" y="70" width="275" height="400"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="剪辑.png" translatesAutoresizingMaskIntoConstraints="NO" id="JNQ-at-6Gz">
+                                        <rect key="frame" x="10" y="10" width="255" height="380"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16078431369999999" green="0.56078431370000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JNQ-at-6Gz" secondAttribute="trailing" constant="10" id="CQ0-VX-GJ6"/>
+                                    <constraint firstAttribute="bottom" secondItem="JNQ-at-6Gz" secondAttribute="bottom" constant="10" id="TGc-ar-BJ4"/>
+                                    <constraint firstItem="JNQ-at-6Gz" firstAttribute="leading" secondItem="2Ud-To-YR2" secondAttribute="leading" constant="10" id="Tuj-oI-vhg"/>
+                                    <constraint firstAttribute="height" constant="400" id="WPl-w8-qrt"/>
+                                    <constraint firstItem="JNQ-at-6Gz" firstAttribute="top" secondItem="2Ud-To-YR2" secondAttribute="top" constant="10" id="r4s-Y4-YQv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Ud-To-YR2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gpa-zg-Flp"/>
+                            <constraint firstItem="2Ud-To-YR2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Xxc-Jt-tkS"/>
+                            <constraint firstItem="2Ud-To-YR2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="fca-LM-Qbs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Ud-To-YR2" secondAttribute="trailing" constant="50" id="uMu-GL-qYq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myView" destination="2Ud-To-YR2" id="WWF-FM-D48"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="剪辑.png" width="809" height="1336"/>
+    </resources>
+</document>
